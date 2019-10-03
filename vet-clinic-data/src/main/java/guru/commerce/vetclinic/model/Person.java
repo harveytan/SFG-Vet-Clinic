@@ -1,6 +1,6 @@
 package guru.commerce.vetclinic.model;
 
-public class Person {
+public class Person extends BaseEntity{
     private String lastName;
     private String firstName;
 

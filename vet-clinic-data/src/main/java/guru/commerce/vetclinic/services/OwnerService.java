@@ -1,7 +1,7 @@
 package guru.commerce.vetclinic.services;
 
-import java.security.acl.Owner;
 import java.util.Set;
+import guru.commerce.vetclinic.model.Owner;
 
 public interface OwnerService {
     Owner findByLastName(String lastName);
