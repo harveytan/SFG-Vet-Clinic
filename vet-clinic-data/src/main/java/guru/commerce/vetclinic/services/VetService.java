@@ -1,4 +1,4 @@
-package guru.commerce.vetclinic.model.guru.commer.vetclinic.services;
+package guru.commerce.vetclinic.services;
 
 import guru.commerce.vetclinic.model.Vet;
 
