@@ -12,15 +12,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class DataLoader implements CommandLineRunner{
 
-    private OwnerService ownerService;
+    private final OwnerService ownerService;
     private final VetService vetService;
-    public DataLoader() {
-        this.ownerService = new OwnerServiceMap();
-        this.vetService = new VetServiceMap();
+
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override
-    public void run(String... args) throws Exception {
+    public void run(String... args){
         Owner owner = new Owner();
         owner.setId(1L);
         owner.setAddress("address1");
